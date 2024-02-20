@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/isbn/assets/css/style.css?v=766ee47421f07c4221e6905f000136297fc587bd">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>ISBN parsing library | isbn</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="ISBN parsing library" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="ISBN parsing library" />
+<meta property="og:description" content="ISBN parsing library" />
+<meta property="og:site_name" content="isbn" />
+<script type="application/ld+json">
+{"@type":"WebSite","url":"/isbn/","description":"ISBN parsing library","headline":"ISBN parsing library","name":"isbn","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/devlooped/isbn">View on GitHub</a>
+
+          <h1 id="project_title">isbn</h1>
+          <h2 id="project_tagline">ISBN parsing library</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="-isbn-parsing-library"><img src="https://raw.githubusercontent.com/devlooped/isbn/main/assets/img/icon-32.png" alt="Icon" /> ISBN parsing library</h1>
+
+<p><a href="https://www.nuget.org/packages/ISBN"><img src="https://img.shields.io/nuget/vpre/ISBN.svg?color=royalblue" alt="Version" /></a>
+<a href="https://www.nuget.org/packages/ISBN"><img src="https://img.shields.io/nuget/dt/ISBN.svg?color=green" alt="Downloads" /></a>
+<a href="https://github.com/devlooped/isbn/blob/main/license.txt"><img src="https://img.shields.io/github/license/devlooped/isbn.svg?color=blue" alt="License" /></a></p>
+
+<!-- #content -->
+<p>An ISBN parsing library</p>
+
+<h1 id="usage">Usage</h1>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="n">ISBN</span><span class="p">.</span><span class="nf">TryParse</span><span class="p">(</span><span class="s">"9780753557525"</span><span class="p">,</span> <span class="k">out</span> <span class="kt">var</span> <span class="n">isbn</span><span class="p">))</span>
+<span class="p">{</span>
+    <span class="n">Console</span><span class="p">.</span><span class="nf">WriteLine</span><span class="p">(</span><span class="s">$"Publisher: </span><span class="p">{</span><span class="n">isbn</span><span class="p">.</span><span class="n">Publisher</span><span class="p">}</span><span class="s">, Article: </span><span class="p">{</span><span class="n">isbn</span><span class="p">.</span><span class="n">Article</span><span class="p">}</span><span class="s"> (Group </span><span class="p">{</span><span class="n">isbn</span><span class="p">.</span><span class="n">Group</span><span class="p">}</span><span class="s">, </span><span class="p">{</span><span class="n">isbn</span><span class="p">.</span><span class="n">GroupName</span><span class="p">}</span><span class="s">)"</span><span class="p">);</span>    
+<span class="p">}</span>
+
+<span class="p">&gt;</span> <span class="n">Publisher</span><span class="p">:</span> <span class="m">7535</span><span class="p">,</span> <span class="n">Article</span><span class="p">:</span> <span class="m">5752</span> <span class="p">(</span><span class="n">Group</span> <span class="m">0</span><span class="p">,</span> <span class="n">English</span> <span class="n">language</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="attribution">Attribution</h2>
+
+<p>The implementation is mostly a port from https://github.com/inventaire/isbn3, and consumes the 
+group information published in that repository.</p>
+
+<p><a href="https://github.com/devlooped/isbn/blob/main/src/ISBN/groups.js">ISBN groups and ranges data</a> 
+is kept up to date via <a href="https://github.com/devlooped/dotnet-file">dotnet-file sync</a> from the 
+isbn3 repository which in turn fetches <a href="https://www.isbn-international.org">isbn-international.org</a> data.</p>
+
+<!-- #content -->
+<!-- include https://github.com/devlooped/sponsors/raw/main/footer.md -->
+<h1 id="sponsors">Sponsors</h1>
+
+<!-- sponsors.md -->
+<p><a href="https://github.com/clarius"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/clarius.png" alt="Clarius Org" title="Clarius Org" /></a>
+<a href="https://github.com/KirillOsenkov"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/KirillOsenkov.png" alt="Kirill Osenkov" title="Kirill Osenkov" /></a>
+<a href="https://github.com/MFB-Technologies-Inc"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/MFB-Technologies-Inc.png" alt="MFB Technologies, Inc." title="MFB Technologies, Inc." /></a>
+<a href="https://github.com/decriptor"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/decriptor.png" alt="Stephen Shaw" title="Stephen Shaw" /></a>
+<a href="https://github.com/torutek-gh"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/torutek-gh.png" alt="Torutek" title="Torutek" /></a>
+<a href="https://github.com/drivenet"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/drivenet.png" alt="DRIVE.NET, Inc." title="DRIVE.NET, Inc." /></a>
+<a href="https://github.com/dgnaegi"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/dgnaegi.png" alt="Daniel Gnägi" title="Daniel Gnägi" /></a>
+<a href="https://github.com/AshleyMedway"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/AshleyMedway.png" alt="Ashley Medway" title="Ashley Medway" /></a>
+<a href="https://github.com/Keflon"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/Keflon.png" alt="Keith Pickford" title="Keith Pickford" /></a>
+<a href="https://github.com/tbolon"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/tbolon.png" alt="Thomas Bolon" title="Thomas Bolon" /></a>
+<a href="https://github.com/kfrancis"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/kfrancis.png" alt="Kori Francis" title="Kori Francis" /></a>
+<a href="https://github.com/SeanKilleen"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/SeanKilleen.png" alt="Sean Killeen" title="Sean Killeen" /></a>
+<a href="https://github.com/twenzel"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/twenzel.png" alt="Toni Wenzel" title="Toni Wenzel" /></a>
+<a href="https://github.com/Giorgi"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/Giorgi.png" alt="Giorgi Dalakishvili" title="Giorgi Dalakishvili" /></a>
+<a href="https://github.com/MikeCodesDotNET"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/MikeCodesDotNET.png" alt="Mike James" title="Mike James" /></a>
+<a href="https://github.com/dansiegel"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/dansiegel.png" alt="Dan Siegel" title="Dan Siegel" /></a>
+<a href="https://github.com/rbnswartz"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/rbnswartz.png" alt="Reuben Swartz" title="Reuben Swartz" /></a>
+<a href="https://github.com/jfoshee"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/jfoshee.png" alt="Jacob Foshee" title="Jacob Foshee" /></a>
+<a href="https://github.com/eajhnsn1"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/Mrxx99.png" alt="" title="&quot;)](https://github.com/Mrxx99)
+[![Eric Johnson](https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/eajhnsn1.png &quot;Eric Johnson" /></a>
+<a href="https://github.com/mackayn"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/mackayn.png" alt="Norman Mackay" title="Norman Mackay" /></a>
+<a href="https://github.com/certifytheweb"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/certifytheweb.png" alt="Certify The Web" title="Certify The Web" /></a>
+<a href="https://github.com/IxTechnologies"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/IxTechnologies.png" alt="Ix Technologies B.V." title="Ix Technologies B.V." /></a>
+<a href="https://github.com/davidjenni"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/davidjenni.png" alt="David JENNI" title="David JENNI" /></a>
+<a href="https://github.com/Jonathan-Hickey"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/Jonathan-Hickey.png" alt="Jonathan " title="Jonathan " /></a>
+<a href="https://github.com/okyrylchuk"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/okyrylchuk.png" alt="Oleg Kyrylchuk" title="Oleg Kyrylchuk" /></a>
+<a href="https://github.com/akunzai"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/akunzai.png" alt="Charley Wu" title="Charley Wu" /></a>
+<a href="https://github.com/jakobt"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/jakobt.png" alt="Jakob Tikjøb Andersen" title="Jakob Tikjøb Andersen" /></a>
+<a href="https://github.com/seanalexander"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/seanalexander.png" alt="Seann Alexander" title="Seann Alexander" /></a>
+<a href="https://github.com/tinohager"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/tinohager.png" alt="Tino Hager" title="Tino Hager" /></a>
+<a href="https://github.com/ploeh"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/ploeh.png" alt="Mark Seemann" title="Mark Seemann" /></a>
+<a href="https://github.com/angelobelchior"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/angelobelchior.png" alt="Angelo Belchior" title="Angelo Belchior" /></a>
+<a href="https://github.com/KenBonny"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/KenBonny.png" alt="Ken Bonny" title="Ken Bonny" /></a>
+<a href="https://github.com/SimonCropp"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/SimonCropp.png" alt="Simon Cropp" title="Simon Cropp" /></a>
+<a href="https://github.com/agileworks-eu"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/agileworks-eu.png" alt="agileworks-eu" title="agileworks-eu" /></a>
+<a href="https://github.com/sorahex"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/sorahex.png" alt="sorahex" title="sorahex" /></a>
+<a href="https://github.com/arsdragonfly"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/arsdragonfly.png" alt="Zheyu Shen" title="Zheyu Shen" /></a>
+<a href="https://github.com/vezel-dev"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/.github/avatars/vezel-dev.png" alt="Vezel" title="Vezel" /></a></p>
+
+<!-- sponsors.md -->
+
+<p><a href="https://github.com/sponsors/devlooped"><img src="https://raw.githubusercontent.com/devlooped/sponsors/main/sponsor.png" alt="Sponsor this project" title="Sponsor this project" /></a>
+ </p>
+
+<p><a href="https://github.com/sponsors">Learn more about GitHub Sponsors</a></p>
+
+<!-- https://github.com/devlooped/sponsors/raw/main/footer.md -->
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">isbn maintained by <a href="https://github.com/devlooped">devlooped</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
